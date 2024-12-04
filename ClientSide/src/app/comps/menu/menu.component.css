@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --bg-color: #f9f9f9;
+    --link-color: #333;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --bg-color: #222;
+    --link-color: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-nav li {
+    margin: 0 1rem;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  .navbar-toggler {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+  }
+  
+  .mode-toggle-container {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100%;
+      width: 250px;
+      background-color: var(--secondary-color);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .navbar-nav.active {
+      right: 0;
+    }
+  
+    .navbar-nav li {
+      margin: 1rem 0;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  
+  .logo {
+    width: 160px; /* רוחב מוגדר כ-100 פיקסלים */
+    height: auto;
+}

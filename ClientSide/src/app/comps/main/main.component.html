@@ -1,0 +1,66 @@
+<!-- <div class="body1">
+
+    <div class="container">
+        <textarea id="inputText" placeholder="Enter your text here" [(ngModel)]="text"> </textarea>
+        <button id="summarizeBtn" (click)="gett()" >Summarize Text</button>
+        <div class="output" id="outputText"></div>
+        <input type="file" id="fileInput">
+
+    </div>
+   
+<div>{{t}}</div>
+</div>
+<span class="loader"  *ngIf="loader"></span> -->
+
+  
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <span class="star">★</span>
+                <span class="language">Text</span>
+            </div>
+            <div class="content">
+                <textarea id="hebrew-text" placeholder="Type here..." [(ngModel)]="text"  (input)="clearParagraph()"></textarea>
+                <input type="file" id="file-upload" class="file-upload"(change)="onFileSelected($event)" accept=".txt" />
+                <label for="file-upload" class="upload-button">Upload</label>
+                <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+            </div>
+            <div class="footer">
+                <!-- <span class="actions">שתף | העתק</span> -->
+                <span id="word-count-hebrew" class="word-count"></span>
+            </div>
+        </div>
+        <div class="container2">
+            <div *ngIf="loader" class="loader"></div>
+            <button class="summarize-button" (click)="gett()" >Summarize</button>
+        </div>
+        <!-- <div class="loader"  *ngIf="loader"></div> 
+       
+        <button  class="summarize-button"  (click)="gett()">Summarize</button> -->
+        <div class="box">
+            <div class="header">
+                <span class="language">Summary</span>
+            </div>
+            <div class="content">
+        
+                <p>{{t}}</p>
+            
+            </div>
+            <div class="footer">
+                <span class="word-count"></span>
+            </div>
+        </div>
+    </div>
+   
+</body>
+<!-- <input type="file" (change)="onChange($event)" >
+
+<pre>{{ fileOutput }}</pre> -->
+
+<!-- <input type="file" (change)="onChange($event)" />
+<div [innerHTML]="fileOutput"></div> -->
+
+<!-- ניסיון אחרון -->
+  <!-- <input type="file" (change)="onFileSelected($event)" />
+<button (click)="uploadFile()">Upload DOCX</button> -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269.03 118.94">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: HadassahFriedlaender, 'Hadassah Friedlaender';
+        font-size: 16.04px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-family: StangaDLV2AAA-Regular, 'Stanga DL V2 AAA';
+        font-size: 98.12px;
+      }
+
+      .cls-5 {
+        fill: #007bff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x=".98" width="175.38" height="97.29"/>
+  <text class="cls-4" transform="translate(6.35 80.38)"><tspan class="cls-3" x="0" y="0">Short</tspan><tspan class="cls-2" x="167.69" y="0">ext</tspan></text>
+  <text class="cls-1" transform="translate(0 114.82)"><tspan x="0" y="0">Summary of texts</tspan></text>
+</svg>
